@@ -25,5 +25,7 @@ https://github.com/MHA-FinalProject/The-Factory/wiki
 
 
 ##  :camera: Gallery
-Pictures of your project.
+
+![image](https://github.com/MHA-FinalProject/The-Factory/assets/118104946/a3235ffa-74ed-46dc-9f09-fee30734bfbf)
+
 
