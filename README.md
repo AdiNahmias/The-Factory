@@ -4,9 +4,7 @@
 
 על השחקן לעזור למפעל להוציא את המוצר בזמן. השחקן נתקל בכל מיני תקלות אפשריות בדרך להוצאת המוצר. למשל, השחקן נדרש להגיע למתגים מסוימים וזאת עד ידי טיפוס/ שימוש במשאבים שאסף בדרך. המשחק משלב חשיבה, השחקן נדרש לדעת אילו משאבים יקדמו אותו בדרך למטרה תוך שהוא מתמודד עם מכשולים שונים בדרך. ככל שיפעל בצורה מהירה יותר, יקבל ניקוד גבוה יותר.
 
-The player has to help the factory get the product out on time. The player encounters all kinds of possible glitches on the way to getting the product out. For example, the player has to reach the switches to use while climbing/ the resources he collects along the way. The game incorporates thinking, the player needs to know which resources will get him on the way to the goal while facing various obstacles along the way. The faster he acts, the higher his score will be.
-
-- Add your project logo.
+קישור ל- wiki: https://github.com/MHA-FinalProject/The-Factory/wiki
 
 
 ## :ledger: Index
