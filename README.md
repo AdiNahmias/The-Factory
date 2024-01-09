@@ -25,6 +25,9 @@ https://github.com/MHA-FinalProject/The-Factory/wiki
 
 ##  :camera: תמונות
 
+![Uploading image.png…]()
+
+
 ![image](https://github.com/MHA-FinalProject/The-Factory/assets/118104946/ad8253e3-75cb-4748-89e6-e749e36b0e5c)
 
 
