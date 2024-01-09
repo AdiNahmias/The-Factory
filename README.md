@@ -9,6 +9,7 @@
 https://github.com/MHA-FinalProject/The-Factory/wiki
 
 
+
 ## :zap: Usage
 
 השחקן יוכל לזוז לכל הצדדים תוך שימוש בידיים להזיז חפצים שעשויים לעזור לו להתקדם במשימות.
