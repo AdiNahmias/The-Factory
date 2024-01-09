@@ -8,13 +8,6 @@
 
 https://github.com/MHA-FinalProject/The-Factory/wiki
 
-         
-
-## :ledger: Index
-
-- [Usage](#zap-usage)
-- [Gallery](#camera-gallery)
-
 
 ## :zap: Usage
 
