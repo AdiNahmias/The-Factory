@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -9,7 +10,6 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
-    private SpriteRenderer sprite; // Reference to the SpriteRenderer component
     private BoxCollider2D coll; // Reference to the BoxCollider2D component
     private Animator anim; // Reference to the Animator component
 
@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float DirY = 0f; // Vertical input direction
     [SerializeField] private float stepSize = 7f; // Movement speed
     [SerializeField] private float jumpSize = 14f; // Jump force
+
+    
 
     public bool ClimbingAllow { get; set; } // Boolean flag for climbing state
 
@@ -40,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Assign the Rigidbody2D component
-        sprite = GetComponent<SpriteRenderer>(); // Assign the SpriteRenderer component
         coll = GetComponent<BoxCollider2D>(); // Assign the BoxCollider2D component
         anim = GetComponent<Animator>(); // Assign the Animator component
     }
@@ -86,13 +87,21 @@ public class PlayerMovement : MonoBehaviour
     {
         MovementState state;
 
+        bool DirXHigherThenZero = (DirX > 0); //checking if we moving right
+
+        bool DirXLowerThenZero = (DirX < 0); // checking if we moving left
+
+        bool IsJumping = (rb.velocity.y > 0.1f);  // checking if we jumping
+
+        bool IsFalling = (rb.velocity.y < -0.1f); // checking if we falling
+
         // Running animation when moving and idle when not
-        if (DirX > 0f)
+        if (DirXHigherThenZero)
         {
             state = MovementState.Running;
             transform.rotation = Quaternion.identity; // Reset rotation when facing right
         }
-        else if (DirX < 0f)
+        else if (DirXLowerThenZero)
         {
             state = MovementState.Running;
             transform.rotation = Quaternion.Euler(0f, 180f, 0f); // Rotate 180 degrees when facing left
@@ -103,11 +112,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Update animation state based on vertical velocity
-        if (rb.velocity.y > 0.1f)
+        if (IsJumping)
         {
             state = MovementState.Jumping;
         }
-        else if (rb.velocity.y < -0.1f)
+        else if (IsFalling)
         {
             state = MovementState.Falling;
         }
@@ -118,12 +127,19 @@ public class PlayerMovement : MonoBehaviour
     // Check if the player is grounded
     private bool IsGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, jumpableGround);
+        float NoAngle = 0f;
+
+        float Dir = 0.1f;
+
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, NoAngle, Vector2.down, Dir, jumpableGround);
     }
 
     // Check if the player is on a box
     private bool IsOnBox()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, jumpableBox);
+        float NoAngle = 0f;
+
+        float Dir = 0.1f;
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, NoAngle, Vector2.down, Dir, jumpableBox);
     }
 }
