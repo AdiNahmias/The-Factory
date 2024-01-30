@@ -19,17 +19,17 @@ PlayerMovement script - [click here](Assets/Scripts/PlayerMovement.cs)
 תפקיד המחקלה LadderDetaction זה כשאר יש התנגשות של השחקן עם הסולם אז הוא יכול לעלות ולרדת בסולם.
 
 
-Platform script - [click here](Assets/Scripts/Platform.cs)
+LadderDetaction script - [click here](Assets/Scripts/Platform.cs)
 ##
 
 תפקיד המחלקה CameraController זה לעקוב אחרי השחקן.
 
 
-CameraFollow script - [click here](Assets/Scripts/CameraFollow.cs)
+CameraController script - [click here](Assets/Scripts/CameraFollow.cs)
 ##
 
 
 תקפיד המחלקה GrabController זה כאשר לוחצים על המקש F ליד האוביקט מסוג package אז אפשר להרים/לזרוק אותו כדי להגיע איתו לקו הסיום.
 
 
-LevelGenerator script - [click here](Assets/Scripts/LevelGenerator.cs)
+GrabController script - [click here](Assets/Scripts/LevelGenerator.cs)
