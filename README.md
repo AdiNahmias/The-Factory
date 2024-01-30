@@ -36,7 +36,7 @@ CameraController script - [click here](Assets/Scripts/CameraController.cs)
 
 
 GrabController script - [click here](Assets/Scripts/GrabController.cs)
-##
+
 
 תקפיד המחלקה Finish זה כאשר יש התנגשות של החבילה עם הדל סיום אז עוברים לשלב הבא.
 
