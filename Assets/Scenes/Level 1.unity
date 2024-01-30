@@ -445,6 +445,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4644430035132643390, guid: 22f139f4231e91849a1bcd75e221476b, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5074003156375921634, guid: 22f139f4231e91849a1bcd75e221476b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.69

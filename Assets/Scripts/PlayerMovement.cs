@@ -125,21 +125,23 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Check if the player is grounded
+    // This function is used to detect collisions or intersections between a box-shaped area and other objects in the 2D world
     private bool IsGrounded()
     {
         float NoAngle = 0f;
 
-        float Dir = 0.1f;
+        float Dist = 0.1f;
 
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, NoAngle, Vector2.down, Dir, jumpableGround);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, NoAngle, Vector2.down, Dist, jumpableGround);
     }
 
     // Check if the player is on a box
+    // This function is used to detect collisions or intersections between a box-shaped area and other objects in the 2D world
     private bool IsOnBox()
     {
         float NoAngle = 0f;
 
-        float Dir = 0.1f;
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, NoAngle, Vector2.down, Dir, jumpableBox);
+        float Dist = 0.1f;
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, NoAngle, Vector2.down, Dist, jumpableBox);
     }
 }
