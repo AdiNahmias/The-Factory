@@ -16,7 +16,7 @@
 PlayerMovement script - [click here](Assets/Scripts/PlayerMovement.cs)
 ##
 
-תפקיד המחקלה LadderDetaction זה כשאר יש התנגשות של השחקן עם הסולם(מזהה שהוא סולם על ידי זה שיש לו רכיב בשם Ladder שזה השם של הscript) אז הוא יכול לעלות ולרדת בסולם.
+תפקיד המחקלה LadderDetaction זה כאשר יש התנגשות של השחקן עם הסולם(מזהה שהוא סולם על ידי זה שיש לו רכיב בשם Ladder שזה השם של הscript) אז הוא יכול לעלות ולרדת בסולם.
 
 
 LadderDetaction script - [click here](Assets/Scripts/LadderDetaction.cs)
