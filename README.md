@@ -1,7 +1,10 @@
 # The Factory
 
 
-מטרת המשחק : לקחת את החבילה לנקודת הסיום. למשחק ב- itch.io לחץ כאן: [click here](https://m-h-a.itch.io/jumpup)
+מטרת המשחק : לקחת את החבילה לנקודת הסיום. 
+
+
+למשחק ב- itch.io לחץ כאן: [click here](https://m-h-a.itch.io/factory2d)
 
 בכל שלב נצטרך על ידי מעבר מכשולים ועזרה במשאבים להגיע לחבילה ולקחת אותה לנקודת הסיום. נצטרך להעזר במשאבים כמו לעלות בסולמות, להשתמש בקופסאות כדי לקפוץ מהם לפלטפורמה גבוהה וכו.
 
@@ -16,26 +19,26 @@
 PlayerMovement script - [click here](Assets/Scripts/PlayerMovement.cs)
 ##
 
-תפקיד המחקלה LadderDetaction זה כשאר יש התנגשות של השחקן עם הסולם(מזהה שהוא סולם על ידי זה שיש לו רכיב בשם Ladder שזה השם של הscript) אז הוא יכול לעלות ולרדת בסולם.
+תפקיד המחקלה LadderDetaction זה כאשר יש התנגשות של השחקן עם הסולם(מזהה שהוא סולם על ידי זה שיש לו רכיב בשם Ladder שזה השם של הscript) אז הוא יכול לעלות ולרדת בסולם.
 
 
-LadderDetaction script - [click here](Assets/Scripts/Platform.cs)
+LadderDetaction script - [click here](Assets/Scripts/LadderDetaction.cs)
 ##
 
 תפקיד המחלקה CameraController זה לעקוב אחרי השחקן.
 
 
-CameraController script - [click here](Assets/Scripts/CameraFollow.cs)
+CameraController script - [click here](Assets/Scripts/CameraController.cs)
 ##
 
 
 תקפיד המחלקה GrabController זה כאשר לוחצים על המקש F ליד האוביקט מסוג package אז אפשר להרים/לזרוק אותו כדי להגיע איתו לקו הסיום.
 
 
-GrabController script - [click here](Assets/Scripts/LevelGenerator.cs)
+GrabController script - [click here](Assets/Scripts/GrabController.cs)
 ##
 
 תקפיד המחלקה Finish זה כאשר יש התנגשות של החבילה עם הדל סיום אז עוברים לשלב הבא.
 
 
-Finish script - [click here](Assets/Scripts/LevelGenerator.cs)
+Finish script - [click here](Assets/Scripts/Finish.cs)
