@@ -1,7 +1,7 @@
 # The Factory
 
 
-מטרת המשחק : לקחת את החבילה לנקודת הסיום. 
+מטרת המשחק : לקחת את החבילה לנקודת הסיום.
 
 
 למשחק ב- itch.io לחץ כאן: [click here](https://m-h-a.itch.io/factory2d)
@@ -13,30 +13,30 @@
 קישורים ל scripts : (הסברים של הקוד נמצאים בתוך הקוד עצמו)
 
 
-תפקיד המחקלה PlayerMovement זה הזזה של השחקן ופניה שלו שמאלה, ימינה, למעלה, קפיצה, וסיבוב השחקן כאשר פונה לכל צד.
+תפקיד המחקלה PlayerMovement זה הזזה של השחקן ופניה שלו שמאלה, ימינה, למעלה, קפיצה, וסיבוב השחקן כאשר פונה לכל צד.בנוסף יש בדיקה אם השחקן על הרצפה או קופסא כדי שיוכל לקפוץ מהם.
 
 
 PlayerMovement script - [click here](Assets/Scripts/PlayerMovement.cs)
-##
+
 
 תפקיד המחקלה LadderDetaction זה כאשר יש התנגשות של השחקן עם הסולם(מזהה שהוא סולם על ידי זה שיש לו רכיב בשם Ladder שזה השם של הscript) אז הוא יכול לעלות ולרדת בסולם.
 
 
 LadderDetaction script - [click here](Assets/Scripts/LadderDetaction.cs)
-##
+
 
 תפקיד המחלקה CameraController זה לעקוב אחרי השחקן.
 
 
 CameraController script - [click here](Assets/Scripts/CameraController.cs)
-##
+
 
 
 תקפיד המחלקה GrabController זה כאשר לוחצים על המקש F ליד האוביקט מסוג package אז אפשר להרים/לזרוק אותו כדי להגיע איתו לקו הסיום.
 
 
 GrabController script - [click here](Assets/Scripts/GrabController.cs)
-##
+
 
 תקפיד המחלקה Finish זה כאשר יש התנגשות של החבילה עם הדל סיום אז עוברים לשלב הבא.
 
