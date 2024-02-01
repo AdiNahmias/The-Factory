@@ -10,11 +10,13 @@ public class GrabController : MonoBehaviour
     [SerializeField] private float rayDist; // The distance of the ray
 
     private GameObject grabbedObject; // Reference to the currently grabbed object
-    private int layerIndex; // Layer index used for raycasting
+    private int layerPackage; // Layer index used for raycasting
+    private int layerBox; // Layer index used for raycasting
 
     private void Start()
     {
-        layerIndex = LayerMask.NameToLayer("Object"); // Set the layer index for raycasting
+        layerPackage = LayerMask.NameToLayer("Object"); // Set the layer index for raycasting
+        layerBox = LayerMask.NameToLayer("Box"); // Set the layer index for raycasting
     }
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class GrabController : MonoBehaviour
         RaycastHit2D grabCheck = Physics2D.Raycast(rayPoint.position, grabPoint.localPosition, rayDist);
 
         // Check if the ray hits an object on the specified layer
-        if (grabCheck.collider != null && grabCheck.collider.gameObject.layer == layerIndex)
+        if (grabCheck.collider != null && grabCheck.collider.gameObject.layer == layerPackage || grabCheck.collider != null && grabCheck.collider.gameObject.layer == layerBox)
         {
             // Check if the grab key (F key) was pressed this frame and no object is currently grabbed
             if (Keyboard.current.fKey.wasPressedThisFrame && grabbedObject == null)
